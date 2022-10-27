@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{342E28B5-CA7E-4876-AB07-0BDD23A59D8C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>helmet_tracking_system</RootNamespace>
+    <AssemblyName>helmet_tracking_system</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>logo_beyaz.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminupdate.Designer.cs">
+      <DependentUpon>adminupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="aracekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="aracekle.Designer.cs">
+      <DependentUpon>aracekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="baretislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="baretislemleri.Designer.cs">
+      <DependentUpon>baretislemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kurumislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kurumislemleri.Designer.cs">
+      <DependentUpon>kurumislemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminpanel.Designer.cs">
+      <DependentUpon>adminpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="personelislemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="personelislemleri.Designer.cs">
+      <DependentUpon>personelislemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kurumekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kurumekle.Designer.cs">
+      <DependentUpon>kurumekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yenikisiekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yenikisiekle.Designer.cs">
+      <DependentUpon>yenikisiekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="veritabaIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="veritabaIslem.Designer.cs">
+      <DependentUpon>veritabaIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yukleniyor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yukleniyor.Designer.cs">
+      <DependentUpon>yukleniyor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ziyaretcikayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ziyaretcikayit.Designer.cs">
+      <DependentUpon>ziyaretcikayit.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminupdate.resx">
+      <DependentUpon>adminupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="aracekle.resx">
+      <DependentUpon>aracekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="baretislemleri.resx">
+      <DependentUpon>baretislemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kurumislemleri.resx">
+      <DependentUpon>kurumislemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminpanel.resx">
+      <DependentUpon>adminpanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="personelislemleri.resx">
+      <DependentUpon>personelislemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kurumekle.resx">
+      <DependentUpon>kurumekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yenikisiekle.resx">
+      <DependentUpon>yenikisiekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="veritabaIslem.resx">
+      <DependentUpon>veritabaIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yukleniyor.resx">
+      <DependentUpon>yukleniyor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ziyaretcikayit.resx">
+      <DependentUpon>ziyaretcikayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kingdom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\france1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\germany1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kask.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resized_acilis_ekranı.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="logo_beyaz.ico" />
+    <None Include="Resources\setting1.png" />
+    <None Include="Resources\menu1.png" />
+    <None Include="Resources\setting.png" />
+    <None Include="Resources\pdf.png" />
+    <None Include="Resources\files.png" />
+    <None Include="Resources\clipboard.png" />
+    <None Include="Resources\truck1.png" />
+    <None Include="Resources\truck.png" />
+    <None Include="Resources\baby-car1.png" />
+    <None Include="Resources\settings1.png" />
+    <None Include="Resources\kurum.png" />
+    <None Include="Resources\turnstiles.png" />
+    <None Include="Resources\visitor-card.png" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\upload.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="Resources\immigration.png" />
+    <None Include="Resources\visitors.png" />
+    <None Include="Resources\shield.png" />
+    <None Include="Resources\healthcare.png" />
+    <None Include="Resources\business-and-trade.png" />
+    <None Include="Resources\baby-car.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\recycle.png" />
+    <None Include="Resources\plus.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\helmet.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\menu.png" />
+    <None Include="Resources\group.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\dashboard.png" />
+    <None Include="Resources\turkey.png" />
+    <None Include="Resources\logo_beyaz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
